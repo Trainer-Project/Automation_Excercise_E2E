@@ -14,14 +14,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ParentClass {
 
-	public static Logger logger;
 	public static WebDriver driver;
 	public static Properties prop;
 	public Properties configProp;
 
 	public ParentClass() {
-		logger = Logger.getLogger("QA Automation"); // Added logger
-		PropertyConfigurator.configure("Log4j.properties");// Added logger
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
@@ -37,20 +34,16 @@ public class ParentClass {
 	public void initialization() {
 		String browser = prop.getProperty("browserName");
 		if (browser.equalsIgnoreCase("Chrome")) {
-			logger.info(">>>>> Test Execuation will start with Chrome Browser <<<<< ");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("Edge")) {
-			logger.info(">>>>> Test Execuation will start with Edge Browser <<<<< ");
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		} else if (browser.equalsIgnoreCase("Firefox")) {
-			logger.info(">>>>> Test Execuation will start with FireFox Browser <<<<< ");
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-		} else {
-			logger.info(">>>>> Thre is no browser for Test Execuation <<<<< ");
 		}
+		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(prop.getProperty("QA_ENV"));
