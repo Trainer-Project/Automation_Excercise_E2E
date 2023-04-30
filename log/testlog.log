@@ -1,0 +1,15 @@
+2023-04-30 19:35:48,980 - QA Automation -INFO - >>>>> Test Execuation will start with Chrome Browser <<<<< 
+2023-04-30 19:35:49,398 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+2023-04-30 19:35:49,418 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\112.0.5615.49\chromedriver.exe
+2023-04-30 19:37:55,850 - QA Automation -INFO - >>>>> Test Execuation will start with Chrome Browser <<<<< 
+2023-04-30 19:37:56,276 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+2023-04-30 19:37:56,298 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\112.0.5615.49\chromedriver.exe
+2023-04-30 19:38:19,482 - QA Automation -INFO - >>>>> Test Execuation will start with Chrome Browser <<<<< 
+2023-04-30 19:38:19,743 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+2023-04-30 19:38:19,758 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\112.0.5615.49\chromedriver.exe
+2023-04-30 19:39:28,753 - QA Automation -INFO - >>>>> Test Execuation will start with Chrome Browser <<<<< 
+2023-04-30 19:39:29,026 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+2023-04-30 19:39:29,039 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\112.0.5615.49\chromedriver.exe
+2023-04-30 19:42:14,155 - QA Automation -INFO - >>>>> Test Execuation will start with Chrome Browser <<<<< 
+2023-04-30 19:42:14,409 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 112.0.5615.49 (resolved driver for Chrome 112)
+2023-04-30 19:42:14,427 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\112.0.5615.49\chromedriver.exe
