@@ -21,8 +21,7 @@ public class ParentClass {
 	public ParentClass() {
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					"C:\\Users\\moham\\eclipse-workspace\\Automation_Excercise_E2E\\src\\main\\java\\smarttech\\ny\\config\\Config.properties");
+			FileInputStream ip = new FileInputStream("./src/main/java/smarttech/ny/config/Config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

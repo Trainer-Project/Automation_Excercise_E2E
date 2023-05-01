@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-04-30T23:42:14.110Z",
+        "start_timestamp": "2023-05-01T00:05:41.904Z",
         "line": 4,
         "name": "User Able To Login, Purchase And Download Invoice.",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2930644700,
+              "duration": 3678892500,
               "status": "passed"
             },
             "line": 6,
