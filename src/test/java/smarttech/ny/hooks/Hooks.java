@@ -1,5 +1,18 @@
 package smarttech.ny.hooks;
 
-public class Hooks {
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import smarttech.ny.basepage.ParentClass;
+
+public class Hooks extends ParentClass{
+	
+	@Before
+	public void setUp() {
+		initialization();
+	}
+	@After
+	public void tearDown() {
+		driver.quit();
+	}
 
 }

@@ -3,7 +3,7 @@ Feature: Valid Users Able To Download Invoice after purchase the order.
 @Functional
 Scenario: User Able To Login, Purchase And Download Invoice.
 
-Given Verify that home page is visible successfully 
+Given Verify that home page is visible successfully
 When Users Able To Click On Products Module
 Then Users Able To Verify 'ALL PRODUCTS' Text Are Available On The Screen 
 When Users Able To Check All the Products Prices Are Displayed And Print In Console 

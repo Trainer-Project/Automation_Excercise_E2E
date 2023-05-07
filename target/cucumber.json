@@ -3,17 +3,39 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-05-01T00:05:41.904Z",
+        "start_timestamp": "2023-05-06T23:35:49.123Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2895644800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "smarttech.ny.hooks.Hooks.setUp()"
+            }
+          }
+        ],
         "line": 4,
         "name": "User Able To Login, Purchase And Download Invoice.",
         "description": "",
         "id": "valid-users-able-to-download-invoice-after-purchase-the-order.;user-able-to-login--purchase-and-download-invoice.",
+        "after": [
+          {
+            "result": {
+              "duration": 134964000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "smarttech.ny.hooks.Hooks.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3678892500,
+              "duration": 3505528000,
               "status": "passed"
             },
             "line": 6,
