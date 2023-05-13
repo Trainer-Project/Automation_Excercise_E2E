@@ -1,33 +1,37 @@
 package smarttech.ny.stepdefinations;
 
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-
 import io.cucumber.java.en.*;
 import smarttech.ny.basepage.ParentClass;
-
 import smarttech.ny.elementspage.MasterPageFactory;
+import smarttech.ny.generic.CommonUtil;
 
 public class FuntionalStepDef extends ParentClass {
 
 	MasterPageFactory pf;
 
 	@Given("Verify that home page is visible successfully")
-	public void verify_that_home_page_is_visible_successfully() {
+	public void verify_that_home_page_is_visible_successfully() throws InterruptedException {
 		pf = new MasterPageFactory();
 		// pf = PageFactory.initElements(driver, MasterPageFactory.class);
 		pf.getLogin(prop.getProperty("UserName"), prop.getProperty("Password"));
-		
-		
-		
-		String text = driver.findElement(By.xpath("//*[text()=' Home']")).getText();
+		String text = pf.getVerifyHomePage().getText();
 		Assert.assertEquals("Home", text);
+		
+		
 	}
 
 	@When("Users Able To Click On Products Module")
-	public void users_able_to_click_on_products_module() {
-
+	public void users_able_to_click_on_products_module() throws InterruptedException  {
+		Thread.sleep(3000);
+		pf.getClickOnProduct().click();
+		CommonUtil.jsClick(pf.getClickOnProduct());
+		driver.findElement(By.linkText("New Customer")).click();
+        Thread.sleep(5000);
+        driver.switchTo().alert().sendKeys("Close");
+        Thread.sleep(5000);
 	}
 
 	@Then("Users Able To Verify {string} Text Are Available On The Screen")

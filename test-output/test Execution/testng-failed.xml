@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [test Execution]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" name="Chrome Test(failed)">
+    <parameter name="browsers" value="Chrome"/>
+    <classes>
+      <class name="smarttech.ny.hooks.CrossBrowserTesting">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testCase"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- smarttech.ny.hooks.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test thread-count="3" name="Edge Test(failed)">
+    <parameter name="browsers" value="Edge"/>
+    <classes>
+      <class name="smarttech.ny.hooks.CrossBrowserTesting">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testCase"/>
+        </methods>
+      </class> <!-- smarttech.ny.hooks.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- Edge Test(failed) -->
+  <test thread-count="3" name="FireFox Test(failed)">
+    <parameter name="browsers" value="FireFox"/>
+    <classes>
+      <class name="smarttech.ny.hooks.CrossBrowserTesting">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testCase"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- smarttech.ny.hooks.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- FireFox Test(failed) -->
+</suite> <!-- Failed suite [test Execution] -->
