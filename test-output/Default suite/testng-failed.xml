@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="smarttech.ny.myrunner.TestRunner">
+      <class name="smarttech.ny.listernerpage.iugiuufkg">
         <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
         </methods>
-      </class> <!-- smarttech.ny.myrunner.TestRunner -->
+      </class> <!-- smarttech.ny.listernerpage.iugiuufkg -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
