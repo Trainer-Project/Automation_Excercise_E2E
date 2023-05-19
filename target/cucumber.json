@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-05-19T02:49:27.598Z",
+        "start_timestamp": "2023-05-19T23:49:04.598Z",
         "before": [
           {
             "result": {
-              "duration": 3417679200,
+              "duration": 4369675700,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 91632000,
+              "duration": 108113900,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2811167100,
+              "duration": 3349154300,
               "status": "passed"
             },
             "line": 8,
@@ -47,7 +47,6 @@
           },
           {
             "result": {
-              "duration": 504100,
               "status": "passed"
             },
             "line": 9,
@@ -172,10 +171,182 @@
             "name": "@smoke"
           }
         ]
+      },
+      {
+        "start_timestamp": "2023-05-19T23:49:12.476Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2815677900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "smarttech.ny.hooks.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "User can login to the application with valid credentials and purchase the specific men\u0027s jacket.",
+        "description": "",
+        "id": "valid-user-can-purchase-the-men-jacket.;user-can-login-to-the-application-with-valid-credentials-and-purchase-the-specific-men-s-jacket.;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 156619200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "smarttech.ny.hooks.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3503627400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User already logged in the application and verify the user information on the landing page",
+            "match": {
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1132500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to select \"Jupiter All-Weather Trainer\" jacket from men module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jupiter All-Weather Trainer\"",
+                  "offset": 30
+                }
+              ],
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_select_jacket_from_men_module(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify the jacket name on the \"Jupiter All-Weather Trainer\" list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jupiter All-Weather Trainer\"",
+                  "offset": 30
+                }
+              ],
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.verify_the_jacket_name_on_the_list(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be able to select the \"M\" and \"Green\" and \"1\" then click on the add to cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"M\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"Green\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 54
+                }
+              ],
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_select_the_and_and_then_click_on_the_add_to_cart(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 507000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should be able to click on the cart",
+            "match": {
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_click_on_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should be able to click on the checkout",
+            "match": {
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_click_on_the_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should be able to enter the shipping details and click on the Next",
+            "match": {
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_enter_the_shipping_details_and_click_on_the_next()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should be able to verify the shipping address and place the order",
+            "match": {
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_verify_the_shipping_address_and_place_the_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should be able to verify the order number and get text on the screen \"Thank you for your purchase!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Thank you for your purchase!\"",
+                  "offset": 74
+                }
+              ],
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_verify_the_order_number_and_get_text_on_the_screen(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
       }
     ],
     "name": "valid user can purchase the men jacket.",
-    "description": "Description:  “Online user can register luma ecommerce website to purchase, return, deliver, exchange, clearance, sale, etc.”  ",
+    "description": "Description:  \"Online user can register luma e-commerce web-site to purchase, return, deliver, exchange, clearance, sale, etc.\"  ",
     "id": "valid-user-can-purchase-the-men-jacket.",
     "keyword": "Feature",
     "uri": "file:Features/LumaFunctional.feature",
