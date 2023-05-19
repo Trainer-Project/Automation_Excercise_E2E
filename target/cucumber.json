@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-05-13T23:46:05.402Z",
+        "start_timestamp": "2023-05-19T02:49:27.598Z",
         "before": [
           {
             "result": {
-              "duration": 2981536400,
+              "duration": 3417679200,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "User Able To Login, Purchase And Download Invoice.",
+        "line": 22,
+        "name": "User can login to the application with valid credentials and purchase the specific men\u0027s jacket.",
         "description": "",
-        "id": "valid-users-able-to-download-invoice-after-purchase-the-order.;user-able-to-login--purchase-and-download-invoice.",
+        "id": "valid-user-can-purchase-the-men-jacket.;user-can-login-to-the-application-with-valid-credentials-and-purchase-the-specific-men-s-jacket.;;2",
         "after": [
           {
             "result": {
-              "duration": 96048800,
+              "duration": 91632000,
               "status": "passed"
             },
             "match": {
@@ -31,263 +31,154 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3489763300,
+              "duration": 2811167100,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Verify that home page is visible successfully",
+            "line": 8,
+            "name": "User already logged in the application and verify the user information on the landing page",
             "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.verify_that_home_page_is_visible_successfully()"
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"New Customer\"}\n  (Session info: chrome\u003d113.0.5672.93)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027THINK-PAD\u0027, ip: \u0027192.168.1.159\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.6\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\\Users\\moham\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 707edbcae0e5d8c9f258f9a4231b7b0d\n*** Element info: {Using\u003dlink text, value\u003dNew Customer}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:220)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat smarttech.ny.stepdefinations.FuntionalStepDef.users_able_to_click_on_products_module(FuntionalStepDef.java:31)\r\n\tat ✽.Users Able To Click On Products Module(file:///C:/Users/moham/eclipse-workspace/Automation_Excercise_E2E/./Features/FuntionalTest.feature:7)\r\n",
-              "duration": 7925134000,
-              "status": "failed"
-            },
-            "line": 7,
-            "name": "Users Able To Click On Products Module",
-            "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.users_able_to_click_on_products_module()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "Users Able To Verify \u0027ALL PRODUCTS\u0027 Text Are Available On The Screen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\u0027ALL PRODUCTS\u0027",
-                  "offset": 21
-                }
-              ],
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.users_able_to_verify_text_are_available_on_the_screen(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 504100,
+              "status": "passed"
             },
             "line": 9,
-            "name": "Users Able To Check All the Products Prices Are Displayed And Print In Console",
+            "name": "User should be able to select \"Jupiter All-Weather Trainer\" jacket from men module",
             "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.users_able_to_check_all_the_products_prices_are_displayed_and_print_in_console()"
+              "arguments": [
+                {
+                  "val": "\"Jupiter All-Weather Trainer\"",
+                  "offset": 30
+                }
+              ],
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_select_jacket_from_men_module(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 10,
-            "name": "Users Able To Select \u0027Cotton Silk Hand Block Print Saree\u0027 From Display And Verify The Price",
+            "name": "Verify the jacket name on the \"Jupiter All-Weather Trainer\" list",
             "match": {
               "arguments": [
                 {
-                  "val": "\u0027Cotton Silk Hand Block Print Saree\u0027",
-                  "offset": 21
+                  "val": "\"Jupiter All-Weather Trainer\"",
+                  "offset": 30
                 }
               ],
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.users_able_to_select_from_display_and_verify_the_price(java.lang.String)"
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.verify_the_jacket_name_on_the_list(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 11,
-            "name": "Users Able To Click On Add To Cart Button",
+            "name": "User should be able to select the \"S\" and \"Blue\" and \"1\" then click on the add to cart",
             "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.users_able_to_click_on_add_to_cart_button()"
+              "arguments": [
+                {
+                  "val": "\"S\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"Blue\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 53
+                }
+              ],
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_select_the_and_and_then_click_on_the_add_to_cart(java.lang.String,java.lang.String,java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 12,
-            "name": "Users Able To Verify \u0027Your product has been added to cart.\u0027 And Click On View Cart",
+            "name": "User should be able to click on the cart",
             "match": {
-              "arguments": [
-                {
-                  "val": "\u0027Your product has been added to cart.\u0027",
-                  "offset": 21
-                }
-              ],
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.users_able_to_verify_and_click_on_view_cart(java.lang.String)"
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_click_on_the_cart()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 13,
-            "name": "Verify The Same Price As I See Before Click On Add To Cart",
+            "name": "User should be able to click on the checkout",
             "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.verify_the_same_price_as_i_see_before_click_on_add_to_cart()"
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_click_on_the_checkout()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 14,
-            "name": "User able to click on the proceed to checkout button",
+            "name": "User should be able to enter the shipping details and click on the Next",
             "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_able_to_click_on_the_proceed_to_checkout_button()"
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_enter_the_shipping_details_and_click_on_the_next()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 15,
-            "name": "User Able To Add Comment About My Order",
+            "name": "User should be able to verify the shipping address and place the order",
             "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_able_to_add_comment_about_my_order()"
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_verify_the_shipping_address_and_place_the_order()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "line": 16,
-            "name": "User Able To Click On Place Order",
-            "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_able_to_click_on_place_order()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "User able to verify Payment Page",
-            "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_able_to_verify_payment_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "Enter payment details Name on Card, Card Number, CVC, Expiration date",
-            "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.enter_payment_details_name_on_card_card_number_cvc_expiration_date()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 19,
-            "name": "Click pay and Confirm Order button",
-            "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.click_pay_and_confirm_order_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "Verify success message \u0027Congratulations! Your order has been confirmed!\u0027",
+            "name": "User should be able to verify the order number and get text on the screen \"Thank you for your purchase!\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\u0027Congratulations! Your order has been confirmed!\u0027",
-                  "offset": 23
+                  "val": "\"Thank you for your purchase!\"",
+                  "offset": 74
                 }
               ],
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.verify_success_message(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 21,
-            "name": "User able to Click on Download Invoice button and verify invoice is downloaded successfully.",
-            "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_able_to_click_on_download_invoice_button_and_verify_invoice_is_downloaded_successfully()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "Click on Continue button",
-            "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.click_on_continue_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 23,
-            "name": "Click On Logout Button",
-            "match": {
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.click_on_logout_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 24,
-            "name": "Verify The Text \u0027Login to your account\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\u0027Login to your account\u0027",
-                  "offset": 16
-                }
-              ],
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.verify_the_text(java.lang.String)"
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_verify_the_order_number_and_get_text_on_the_screen(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Functional"
+            "name": "@smoke"
           }
         ]
       }
     ],
-    "name": "Valid Users Able To Download Invoice after purchase the order.",
-    "description": "",
-    "id": "valid-users-able-to-download-invoice-after-purchase-the-order.",
+    "name": "valid user can purchase the men jacket.",
+    "description": "Description:  “Online user can register luma ecommerce website to purchase, return, deliver, exchange, clearance, sale, etc.”  ",
+    "id": "valid-user-can-purchase-the-men-jacket.",
     "keyword": "Feature",
-    "uri": "file:Features/FuntionalTest.feature",
+    "uri": "file:Features/LumaFunctional.feature",
     "tags": []
   }
 ]

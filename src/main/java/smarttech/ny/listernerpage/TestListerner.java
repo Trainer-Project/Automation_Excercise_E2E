@@ -9,19 +9,19 @@ public class TestListerner implements ITestListener{
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		System.out.println("onTestStart" + result.getName());
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		System.out.println("onTestSuccess" + result.getName());
+		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		System.out.println("onTestFailure" + result.getName());
+		// TODO Auto-generated method stub
 		
 	}
 
@@ -49,4 +49,5 @@ public class TestListerner implements ITestListener{
 		
 	}
 
+	
 }

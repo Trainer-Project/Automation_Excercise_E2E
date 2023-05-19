@@ -1,8 +1,6 @@
 package smarttech.ny.elementspage;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -16,7 +14,7 @@ public class MasterPageFactory extends ParentClass {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "(//input[@name='email'])[1]")
+	@FindBy(id = "email")
 	@CacheLookup
 	private WebElement enterEmail;
 
@@ -24,7 +22,7 @@ public class MasterPageFactory extends ParentClass {
 		return enterEmail;
 	}
 
-	@FindBy(xpath = "//input[@type='password']")
+	@FindBy(id = "pass")
 	@CacheLookup
 	private WebElement enterPassword;
 
@@ -32,7 +30,7 @@ public class MasterPageFactory extends ParentClass {
 		return enterPassword;
 	}
 
-	@FindBy(xpath = "(//button[@type='submit'])[1]")
+	@FindBy(id = "send2")
 	@CacheLookup
 	private WebElement clickOnLoginBTN;
 
@@ -40,6 +38,16 @@ public class MasterPageFactory extends ParentClass {
 		return clickOnLoginBTN;
 	}
 	
+	@FindBy(partialLinkText = "Sign In")
+	@CacheLookup
+	private WebElement clickOnSignInBTN;
+
+	public WebElement getClickOnSignInBTN() {
+		return clickOnSignInBTN;
+	}
+	
+
+ 
 	
 	@FindBy(xpath = "//*[text()=' Home']")
 	@CacheLookup
@@ -59,6 +67,7 @@ public class MasterPageFactory extends ParentClass {
 
 	
 	public void getLogin(String userName, String pwd) {
+		CommonUtil.actionClick(getClickOnSignInBTN());
 		getEnterEmail().sendKeys(userName);
 		getEnterPassword().sendKeys(pwd);
 		CommonUtil.actionClick(getClickOnLoginBTN());

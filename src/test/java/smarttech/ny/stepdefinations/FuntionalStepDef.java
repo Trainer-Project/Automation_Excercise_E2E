@@ -1,121 +1,56 @@
 package smarttech.ny.stepdefinations;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import smarttech.ny.basepage.ParentClass;
 import smarttech.ny.elementspage.MasterPageFactory;
-import smarttech.ny.generic.CommonUtil;
 
 public class FuntionalStepDef extends ParentClass {
 
 	MasterPageFactory pf;
 
-	@Given("Verify that home page is visible successfully")
-	public void verify_that_home_page_is_visible_successfully() throws InterruptedException {
+	@Given("User already logged in the application and verify the user information on the landing page")
+	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() {
 		pf = new MasterPageFactory();
-		// pf = PageFactory.initElements(driver, MasterPageFactory.class);
 		pf.getLogin(prop.getProperty("UserName"), prop.getProperty("Password"));
-		String text = pf.getVerifyHomePage().getText();
-		Assert.assertEquals("Home", text);
-		
-		
-	}
-
-	@When("Users Able To Click On Products Module")
-	public void users_able_to_click_on_products_module() throws InterruptedException  {
-		Thread.sleep(3000);
-		pf.getClickOnProduct().click();
-		CommonUtil.jsClick(pf.getClickOnProduct());
-		driver.findElement(By.linkText("New Customer")).click();
-        Thread.sleep(5000);
-        driver.switchTo().alert().sendKeys("Close");
-        Thread.sleep(5000);
-	}
-
-	@Then("Users Able To Verify {string} Text Are Available On The Screen")
-	public void users_able_to_verify_text_are_available_on_the_screen(String string) {
 
 	}
 
-	@When("Users Able To Check All the Products Prices Are Displayed And Print In Console")
-	public void users_able_to_check_all_the_products_prices_are_displayed_and_print_in_console() {
+	@When("User should be able to select {string} jacket from men module")
+	public void user_should_be_able_to_select_jacket_from_men_module(String string) {
+	}
+
+	@When("Verify the jacket name on the {string} list")
+	public void verify_the_jacket_name_on_the_list(String string) {
+	}
+
+	@When("User should be able to select the {string} and {string} and {string} then click on the add to cart")
+	public void user_should_be_able_to_select_the_and_and_then_click_on_the_add_to_cart(String string, String string2, String string3) {
+	}
+
+	@When("User should be able to click on the cart")
+	public void user_should_be_able_to_click_on_the_cart() {
 
 	}
 
-	@Then("Users Able To Select {string} From Display And Verify The Price")
-	public void users_able_to_select_from_display_and_verify_the_price(String string) {
+	@When("User should be able to click on the checkout")
+	public void user_should_be_able_to_click_on_the_checkout() {
 
 	}
 
-	@When("Users Able To Click On Add To Cart Button")
-	public void users_able_to_click_on_add_to_cart_button() {
+	@When("User should be able to enter the shipping details and click on the Next")
+	public void user_should_be_able_to_enter_the_shipping_details_and_click_on_the_next() {
 
 	}
 
-	@Then("Users Able To Verify {string} And Click On View Cart")
-	public void users_able_to_verify_and_click_on_view_cart(String string) {
+	@When("User should be able to verify the shipping address and place the order")
+	public void user_should_be_able_to_verify_the_shipping_address_and_place_the_order() {
 
 	}
 
-	@Then("Verify The Same Price As I See Before Click On Add To Cart")
-	public void verify_the_same_price_as_i_see_before_click_on_add_to_cart() {
-
-	}
-
-	@When("User able to click on the proceed to checkout button")
-	public void user_able_to_click_on_the_proceed_to_checkout_button() {
-
-	}
-
-	@When("User Able To Add Comment About My Order")
-	public void user_able_to_add_comment_about_my_order() {
-
-	}
-
-	@When("User Able To Click On Place Order")
-	public void user_able_to_click_on_place_order() {
-
-	}
-
-	@Then("User able to verify Payment Page")
-	public void user_able_to_verify_payment_page() {
-
-	}
-
-	@Then("Enter payment details Name on Card, Card Number, CVC, Expiration date")
-	public void enter_payment_details_name_on_card_card_number_cvc_expiration_date() {
-
-	}
-
-	@Then("Click pay and Confirm Order button")
-	public void click_pay_and_confirm_order_button() {
-
-	}
-
-	@Then("Verify success message {string}")
-	public void verify_success_message(String string) {
-
-	}
-
-	@When("User able to Click on Download Invoice button and verify invoice is downloaded successfully.")
-	public void user_able_to_click_on_download_invoice_button_and_verify_invoice_is_downloaded_successfully() {
-
-	}
-
-	@When("Click on Continue button")
-	public void click_on_continue_button() {
-
-	}
-
-	@When("Click On Logout Button")
-	public void click_on_logout_button() {
-
-	}
-
-	@Then("Verify The Text {string}")
-	public void verify_the_text(String string) {
+	@Then("User should be able to verify the order number and get text on the screen {string}")
+	public void user_should_be_able_to_verify_the_order_number_and_get_text_on_the_screen(String string) {
 
 	}
 
