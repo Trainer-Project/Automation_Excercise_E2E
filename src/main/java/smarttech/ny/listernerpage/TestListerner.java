@@ -1,11 +1,18 @@
 package smarttech.ny.listernerpage;
 
 
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
+import java.io.File;
+import java.io.IOException;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriverException;
+import org.testng.*;
+import smarttech.ny.basepage.ParentClass;
+import smarttech.ny.generic.CommonUtil;
 
-public class TestListerner implements ITestListener{
+
+public class TestListerner extends ParentClass implements ITestListener{
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -21,9 +28,8 @@ public class TestListerner implements ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
-		
-	}
+		CommonUtil.captureScreen();
+		}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {

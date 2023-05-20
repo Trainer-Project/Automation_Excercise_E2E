@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import smarttech.ny.basepage.ParentClass;
 import smarttech.ny.elementspage.MasterPageFactory;
+import smarttech.ny.generic.CommonUtil;
 
 public class FuntionalStepDef extends ParentClass {
 
@@ -14,15 +15,15 @@ public class FuntionalStepDef extends ParentClass {
 	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() {
 		pf = new MasterPageFactory();
 		pf.getLogin(prop.getProperty("UserName"), prop.getProperty("Password"));
-
+		CommonUtil.captureScreen();
 	}
 
 	@When("User should be able to select {string} jacket from men module")
-	public void user_should_be_able_to_select_jacket_from_men_module(String string) {
+	public void user_should_be_able_to_select_jacket_from_men_module(String jacket) {
 	}
 
 	@When("Verify the jacket name on the {string} list")
-	public void verify_the_jacket_name_on_the_list(String string) {
+	public void verify_the_jacket_name_on_the_list(String jacket) {
 	}
 
 	@When("User should be able to select the {string} and {string} and {string} then click on the add to cart")
