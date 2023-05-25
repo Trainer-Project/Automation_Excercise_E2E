@@ -8,7 +8,7 @@ public class MapPractices {
 	
 	
 	public static void main(String[] args) {
-		HashMap map = new HashMap();
+		//HashMap map = new HashMap();
 		
 		HashMap <Integer, String> mapOne = new HashMap<Integer, String>();
 		mapOne.put(23413, "Alam");

@@ -25,6 +25,7 @@ public class ParentClass {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 	}
 
@@ -46,4 +47,14 @@ public class ParentClass {
 		driver.get(prop.getProperty("QA_ENV"));
 
 	}
+	
+	
+	public static void main(String[] args) {
+     
+		 int data=100/0;  
+      System.out.println(data);
+
+	}
+	
+	
 }

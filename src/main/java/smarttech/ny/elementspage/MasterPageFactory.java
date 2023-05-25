@@ -8,7 +8,7 @@ import smarttech.ny.basepage.ParentClass;
 import smarttech.ny.generic.CommonUtil;
 
 public class MasterPageFactory extends ParentClass {
-
+ 
 	// Initialize PageFactory
 	public MasterPageFactory() {
 		PageFactory.initElements(driver, this);
