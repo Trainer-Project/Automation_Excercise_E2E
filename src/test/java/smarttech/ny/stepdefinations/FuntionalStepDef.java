@@ -1,37 +1,39 @@
 package smarttech.ny.stepdefinations;
 
-import org.testng.Assert;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import smarttech.ny.basepage.ParentClass;
 import smarttech.ny.elementspage.MasterPageFactory;
+import smarttech.ny.generic.CommonUtil;
+import smarttech.ny.generic.WaitHelper;
 
 public class FuntionalStepDef extends ParentClass {
-
 	MasterPageFactory pf;
 
 	@Given("User already logged in the application and verify the user information on the landing page")
-	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() throws InterruptedException {
+	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() {
 		pf = new MasterPageFactory();
-		Thread.sleep(5000);
-	
-		String expected = "Welcome, Tanvir Patwary!";		
-		String actual = pf.getVerifyUserInfo().getText();	
-		
-		Assert.assertEquals(expected, actual);
-		System.out.println("My info is : "+expected);
-		
+
+		WaitHelper.waitForElement(pf.getVerifyUserInfo());
+		CommonUtil.getAssertions(pf.getVerifyUserInfo().getText(), prop.getProperty("expectedText"));
 	}
 
-	@When("User should be able to select {string} jacket from men module")
-	public void user_should_be_able_to_select_jacket_from_men_module(String jacket) {
-	
+	@When("User should be able to select jacket from men module")
+	public void User_should_be_able_to_select_jacket_from_men_module() {
+		WaitHelper.waitForElement(pf.getSelectMen());
+		CommonUtil.hoverOver(pf.getSelectMen());
+
+		WaitHelper.waitForElement(pf.getSelectTops());
+		CommonUtil.hoverOver(pf.getSelectTops());
+
+		WaitHelper.waitForElement(pf.getClickJacket());
+		CommonUtil.actionClick(pf.getClickJacket());
 	}
 
 	@When("Verify the jacket name on the {string} list")
 	public void verify_the_jacket_name_on_the_list(String jacket) {
+
 	}
 
 	@When("User should be able to select the {string} and {string} and {string} then click on the add to cart")

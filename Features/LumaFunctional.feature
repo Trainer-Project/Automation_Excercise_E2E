@@ -6,7 +6,7 @@ Description:  "Online user can register luma e-commerce web-site to purchase, re
 Scenario Outline: User can login to the application with valid credentials and purchase the specific men's jacket.   
 
 Given User already logged in the application and verify the user information on the landing page  
-When User should be able to select "<specific>" jacket from men module  
+When User should be able to select jacket from men module  
 And Verify the jacket name on the "<specific>" list  
 And User should be able to select the "<size>" and "<color>" and "<quantity>" then click on the add to cart   
 And User should be able to click on the cart 

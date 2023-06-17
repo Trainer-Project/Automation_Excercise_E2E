@@ -4,6 +4,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -45,6 +47,8 @@ public class ParentClass {
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		// implicitlyWait wait for only page loading
+		driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("QA_ENV"));
 
 	}

@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-06-17T20:04:12.091Z",
+        "start_timestamp": "2023-06-17T21:55:33.902Z",
         "before": [
           {
             "result": {
-              "duration": 5893003100,
+              "duration": 5304639700,
               "status": "passed"
             },
             "match": {
@@ -19,23 +19,12 @@
         "name": "User can login to the application with valid credentials and purchase the specific men\u0027s jacket.",
         "description": "",
         "id": "valid-user-can-purchase-the-men-jacket.;user-can-login-to-the-application-with-valid-credentials-and-purchase-the-specific-men-s-jacket.;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 151763800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "smarttech.ny.hooks.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 5033937900,
+              "duration": 951042800,
               "status": "passed"
             },
             "line": 8,
@@ -47,24 +36,19 @@
           },
           {
             "result": {
-              "duration": 1396700,
+              "duration": 1135445500,
               "status": "passed"
             },
             "line": 9,
-            "name": "User should be able to select \"Jupiter All-Weather Trainer\" jacket from men module",
+            "name": "User should be able to select jacket from men module",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Jupiter All-Weather Trainer\"",
-                  "offset": 30
-                }
-              ],
-              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.user_should_be_able_to_select_jacket_from_men_module(java.lang.String)"
+              "location": "smarttech.ny.stepdefinations.FuntionalStepDef.User_should_be_able_to_select_jacket_from_men_module()"
             },
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 1439600,
               "status": "passed"
             },
             "line": 10,

@@ -20,7 +20,7 @@ public class Hooks extends ParentClass {
 		obj.getLogin();
 	}
 
-	@After
+	//@After
 	public void tearDown(Scenario scenario) {
 		if (scenario.isFailed()) {
 			CommonUtil.captureScreen();

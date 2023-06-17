@@ -9,10 +9,21 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.Augmenter;
+import org.testng.Assert;
 
 import smarttech.ny.basepage.ParentClass;
 
 public class CommonUtil extends ParentClass {
+
+	public static void getAssertions(String expected, String actual) {
+		Assert.assertEquals(expected, actual);
+		System.out.println("My desired value is : " + actual);
+	}
+
+	public static void hoverOver(WebElement ele) {
+		Actions ac = new Actions(driver);
+		ac.moveToElement(ele).build().perform();
+	}
 
 	public static void actionClick(WebElement ele) {
 		Actions ac = new Actions(driver);
