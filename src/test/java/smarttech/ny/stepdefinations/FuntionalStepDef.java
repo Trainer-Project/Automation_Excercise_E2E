@@ -14,19 +14,22 @@ public class FuntionalStepDef extends ParentClass {
 	@Given("User already logged in the application and verify the user information on the landing page")
 	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() {
 		pf = new MasterPageFactory();
-
+		log.info(">>>>>>>>> User able to verify user info on the screen >>>>>>>>>>");
 		WaitHelper.waitForElement(pf.getVerifyUserInfo());
 		CommonUtil.getAssertions(pf.getVerifyUserInfo().getText(), prop.getProperty("expectedText"));
 	}
 
 	@When("User should be able to select jacket from men module")
 	public void User_should_be_able_to_select_jacket_from_men_module() {
+		log.info(">>>>>>>>> User able to hover over top men module >>>>>>>>>>");
 		WaitHelper.waitForElement(pf.getSelectMen());
 		CommonUtil.hoverOver(pf.getSelectMen());
 
+		log.info(">>>>>>>>> User able to hover over tops inside the man module >>>>>>>>>>");
 		WaitHelper.waitForElement(pf.getSelectTops());
 		CommonUtil.hoverOver(pf.getSelectTops());
 
+		log.info(">>>>>>>>> User able to click on jacket >>>>>>>>>>");
 		WaitHelper.waitForElement(pf.getClickJacket());
 		CommonUtil.actionClick(pf.getClickJacket());
 	}

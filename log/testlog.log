@@ -1,0 +1,25 @@
+2023-06-17 18:55:44,516 - Luma E-Commerce -INFO - >>>>>>>>> Test Execute On Chrome Browser >>>>>>>>>>
+2023-06-17 18:55:45,264 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-06-17 18:55:45,279 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-06-17 18:55:47,475 - Luma E-Commerce -INFO - >>>>>>>>> User can click on sign In BTN >>>>>>>>>>
+2023-06-17 18:55:48,620 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the userName >>>>>>>>>>
+2023-06-17 18:55:48,786 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the password >>>>>>>>>>
+2023-06-17 18:55:48,831 - Luma E-Commerce -INFO - >>>>>>>>> User can click on log In BTN >>>>>>>>>>
+2023-06-17 18:55:50,276 - Luma E-Commerce -INFO - >>>>>>>>> User able to verify user info on the screen >>>>>>>>>>
+2023-06-17 18:55:51,274 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over top men module >>>>>>>>>>
+2023-06-17 18:55:51,440 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over tops inside the man module >>>>>>>>>>
+2023-06-17 18:55:51,610 - Luma E-Commerce -INFO - >>>>>>>>> User able to click on jacket >>>>>>>>>>
+2023-06-17 19:00:10,112 - Luma E-Commerce -INFO - >>>>>>>>> Test Execute On Edge Browser >>>>>>>>>>
+2023-06-17 19:00:13,227 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using msedgedriver 114.0.1823.51 (resolved driver for Edge 114)
+2023-06-17 19:00:13,251 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Reading https://msedgedriver.azureedge.net/?restype=container&comp=list to seek msedgedriver
+2023-06-17 19:00:16,161 - io.github.bonigarcia.wdm.online.Downloader -INFO - Downloading https://msedgedriver.azureedge.net/114.0.1823.51/edgedriver_win64.zip
+2023-06-17 19:00:18,643 - io.github.bonigarcia.wdm.online.Downloader -INFO - Extracting driver from compressed file edgedriver_win64.zip
+2023-06-17 19:00:18,799 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.edge.driver as C:\Users\moham\.cache\selenium\msedgedriver\win64\114.0.1823.51\msedgedriver.exe
+2023-06-17 19:00:21,472 - Luma E-Commerce -INFO - >>>>>>>>> User can click on sign In BTN >>>>>>>>>>
+2023-06-17 19:00:22,645 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the userName >>>>>>>>>>
+2023-06-17 19:00:22,803 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the password >>>>>>>>>>
+2023-06-17 19:00:22,852 - Luma E-Commerce -INFO - >>>>>>>>> User can click on log In BTN >>>>>>>>>>
+2023-06-17 19:00:24,101 - Luma E-Commerce -INFO - >>>>>>>>> User able to verify user info on the screen >>>>>>>>>>
+2023-06-17 19:00:25,030 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over top men module >>>>>>>>>>
+2023-06-17 19:00:25,187 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over tops inside the man module >>>>>>>>>>
+2023-06-17 19:00:25,358 - Luma E-Commerce -INFO - >>>>>>>>> User able to click on jacket >>>>>>>>>>
