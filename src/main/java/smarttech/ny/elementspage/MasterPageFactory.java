@@ -49,27 +49,23 @@ public class MasterPageFactory extends ParentClass {
 
  
 	
-	@FindBy(xpath = "//*[text()=' Home']")
+	@FindBy(xpath = "(//*[text()='Welcome, Tanvir Patwary!'])[1]")
 	@CacheLookup
-	private WebElement verifyHomePage;
+	private WebElement verifyUserInfo;
 
-	public WebElement getVerifyHomePage() {
-		return verifyHomePage;
+	public WebElement getVerifyUserInfo() {
+		return verifyUserInfo;
 	}
 	
-	@FindBy(xpath = "//*[text()=' Products']")
-	@CacheLookup
-	private WebElement clickOnProduct;
 
-	public WebElement getClickOnProduct() {
-		return clickOnProduct;
-	}
 
 	
-	public void getLogin(String userName, String pwd) {
+
+	
+	public void getLogin() {
 		CommonUtil.actionClick(getClickOnSignInBTN());
-		getEnterEmail().sendKeys(userName);
-		getEnterPassword().sendKeys(pwd);
+		getEnterEmail().sendKeys(prop.getProperty("UserName"));
+		getEnterPassword().sendKeys(prop.getProperty("Password"));
 		CommonUtil.actionClick(getClickOnLoginBTN());
 		
 

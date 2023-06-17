@@ -14,8 +14,9 @@ public class ParentClass {
 
 	public static WebDriver driver;
 	public static Properties prop;
-	public Properties configProp;
 
+	
+	
 	public ParentClass() {
 		try {
 			prop = new Properties();

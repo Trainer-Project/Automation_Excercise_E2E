@@ -16,11 +16,12 @@ And User should be able to verify the shipping address and place the order
 Then User should be able to verify the order number and get text on the screen "Thank you for your purchase!"
 
 
+
 Examples:
 
 |        specific                  | size |    color     |      quantity        |         
 |    Jupiter All-Weather Trainer   | S    |     Blue     |          1           |
-|    Jupiter All-Weather Trainer   | M    |     Green    |          1           |
+
 
 
 

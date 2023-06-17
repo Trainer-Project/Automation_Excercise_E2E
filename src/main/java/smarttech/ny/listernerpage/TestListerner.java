@@ -1,12 +1,6 @@
 package smarttech.ny.listernerpage;
 
 
-import java.io.File;
-import java.io.IOException;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriverException;
 import org.testng.*;
 import smarttech.ny.basepage.ParentClass;
 import smarttech.ny.generic.CommonUtil;

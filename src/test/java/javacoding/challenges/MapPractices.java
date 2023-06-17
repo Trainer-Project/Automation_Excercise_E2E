@@ -24,7 +24,7 @@ public class MapPractices {
 		mapOne.put(4545,    null);
 		mapOne.put(978,     "Emaran");
 		
-		for (Entry newValue : mapOne.entrySet()) {
+		for (Entry<Integer, String> newValue : mapOne.entrySet()) {
 			 System.out.println(newValue.getKey() + " " + newValue.getValue());
 			
 		}

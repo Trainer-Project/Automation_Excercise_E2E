@@ -38,10 +38,10 @@ public class ListPractices {
 	public static void main(String[] args) {
 		int num [] = {10, 20, 30, 40, 50};
 		int value = num.length;
-		//System.out.println(value);
+		System.out.println(value);
 		
 		// One way
-		ArrayList listOne = new ArrayList(); // old
+		//ArrayList listOne = new ArrayList(); // old
 		
 		// 2nd way
 		ArrayList<Integer> listTwo = new ArrayList<Integer>(); // new 
@@ -71,7 +71,7 @@ public class ListPractices {
 		// 4th way 
 		List<Integer> listFour = new ArrayList<Integer>(Arrays.asList(100, 200, 300, 400, 500, 600)); // new 
 		int s = listFour.size();
-		//System.out.println(s);
+		System.out.println(s);
 		
 		
 		LinkedList<String> linkedlist = new LinkedList<String> ();

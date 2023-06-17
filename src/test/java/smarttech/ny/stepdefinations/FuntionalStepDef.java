@@ -1,25 +1,33 @@
 package smarttech.ny.stepdefinations;
 
+import org.testng.Assert;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import smarttech.ny.basepage.ParentClass;
 import smarttech.ny.elementspage.MasterPageFactory;
-import smarttech.ny.generic.CommonUtil;
 
 public class FuntionalStepDef extends ParentClass {
 
 	MasterPageFactory pf;
 
 	@Given("User already logged in the application and verify the user information on the landing page")
-	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() {
+	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() throws InterruptedException {
 		pf = new MasterPageFactory();
-		pf.getLogin(prop.getProperty("UserName"), prop.getProperty("Password"));
-		CommonUtil.captureScreen();
+		Thread.sleep(5000);
+	
+		String expected = "Welcome, Tanvir Patwary!";		
+		String actual = pf.getVerifyUserInfo().getText();	
+		
+		Assert.assertEquals(expected, actual);
+		System.out.println("My info is : "+expected);
+		
 	}
 
 	@When("User should be able to select {string} jacket from men module")
 	public void user_should_be_able_to_select_jacket_from_men_module(String jacket) {
+	
 	}
 
 	@When("Verify the jacket name on the {string} list")
@@ -27,7 +35,8 @@ public class FuntionalStepDef extends ParentClass {
 	}
 
 	@When("User should be able to select the {string} and {string} and {string} then click on the add to cart")
-	public void user_should_be_able_to_select_the_and_and_then_click_on_the_add_to_cart(String string, String string2, String string3) {
+	public void user_should_be_able_to_select_the_and_and_then_click_on_the_add_to_cart(String string, String string2,
+			String string3) {
 	}
 
 	@When("User should be able to click on the cart")
@@ -51,7 +60,7 @@ public class FuntionalStepDef extends ParentClass {
 	}
 
 	@Then("User should be able to verify the order number and get text on the screen {string}")
-	public void user_should_be_able_to_verify_the_order_number_and_get_text_on_the_screen(String string) {
+	public void user_should_be_able_to_verify_the_order_number_and_get_text_on_the_screen(String text) {
 
 	}
 
