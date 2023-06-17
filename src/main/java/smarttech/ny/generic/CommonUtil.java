@@ -33,7 +33,13 @@ public class CommonUtil extends ParentClass {
 	public static void jsClick(WebElement ele) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", ele);
+	}
 
+	
+	
+	public static void highLighterMethod(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].setAttribute('style', 'background: green; border: 2px solid red;');", element);
 	}
 
 	public static String captureScreen() {

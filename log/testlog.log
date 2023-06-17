@@ -23,3 +23,36 @@
 2023-06-17 19:00:25,030 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over top men module >>>>>>>>>>
 2023-06-17 19:00:25,187 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over tops inside the man module >>>>>>>>>>
 2023-06-17 19:00:25,358 - Luma E-Commerce -INFO - >>>>>>>>> User able to click on jacket >>>>>>>>>>
+2023-06-17 19:13:02,816 - Luma E-Commerce -INFO - >>>>>>>>> Test Execute On Chrome Browser >>>>>>>>>>
+2023-06-17 19:13:03,116 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-06-17 19:13:03,138 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-06-17 19:13:05,409 - Luma E-Commerce -INFO - >>>>>>>>> User can click on sign In BTN >>>>>>>>>>
+2023-06-17 19:13:06,489 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the userName >>>>>>>>>>
+2023-06-17 19:13:06,642 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the password >>>>>>>>>>
+2023-06-17 19:13:06,691 - Luma E-Commerce -INFO - >>>>>>>>> User can click on log In BTN >>>>>>>>>>
+2023-06-17 19:13:08,047 - Luma E-Commerce -INFO - >>>>>>>>> User able to verify user info on the screen >>>>>>>>>>
+2023-06-17 19:13:08,967 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over top men module >>>>>>>>>>
+2023-06-17 19:13:09,140 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over tops inside the man module >>>>>>>>>>
+2023-06-17 19:13:09,329 - Luma E-Commerce -INFO - >>>>>>>>> User able to click on jacket >>>>>>>>>>
+2023-06-17 19:14:20,761 - Luma E-Commerce -INFO - >>>>>>>>> Test Execute On Chrome Browser >>>>>>>>>>
+2023-06-17 19:14:21,058 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-06-17 19:14:21,079 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-06-17 19:14:23,425 - Luma E-Commerce -INFO - >>>>>>>>> User can click on sign In BTN >>>>>>>>>>
+2023-06-17 19:14:24,544 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the userName >>>>>>>>>>
+2023-06-17 19:14:24,703 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the password >>>>>>>>>>
+2023-06-17 19:14:24,748 - Luma E-Commerce -INFO - >>>>>>>>> User can click on log In BTN >>>>>>>>>>
+2023-06-17 19:14:26,036 - Luma E-Commerce -INFO - >>>>>>>>> User able to verify user info on the screen >>>>>>>>>>
+2023-06-17 19:14:26,911 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over top men module >>>>>>>>>>
+2023-06-17 19:14:27,089 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over tops inside the man module >>>>>>>>>>
+2023-06-17 19:14:27,259 - Luma E-Commerce -INFO - >>>>>>>>> User able to click on jacket >>>>>>>>>>
+2023-06-17 19:15:39,764 - Luma E-Commerce -INFO - >>>>>>>>> Test Execute On Chrome Browser >>>>>>>>>>
+2023-06-17 19:15:40,058 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-06-17 19:15:40,079 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-06-17 19:15:42,323 - Luma E-Commerce -INFO - >>>>>>>>> User can click on sign In BTN >>>>>>>>>>
+2023-06-17 19:15:43,430 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the userName >>>>>>>>>>
+2023-06-17 19:15:43,588 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the password >>>>>>>>>>
+2023-06-17 19:15:43,630 - Luma E-Commerce -INFO - >>>>>>>>> User can click on log In BTN >>>>>>>>>>
+2023-06-17 19:15:44,960 - Luma E-Commerce -INFO - >>>>>>>>> User able to verify user info on the screen >>>>>>>>>>
+2023-06-17 19:15:45,884 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over top men module >>>>>>>>>>
+2023-06-17 19:15:46,057 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over tops inside the man module >>>>>>>>>>
+2023-06-17 19:15:46,230 - Luma E-Commerce -INFO - >>>>>>>>> User able to click on jacket >>>>>>>>>>

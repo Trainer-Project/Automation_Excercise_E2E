@@ -84,18 +84,22 @@ public class MasterPageFactory extends ParentClass {
 	
 	public void getLogin() {
 		log.info(">>>>>>>>> User can click on sign In BTN >>>>>>>>>>");
+		CommonUtil.highLighterMethod(getClickOnSignInBTN());
 		WaitHelper.waitForElement(getClickOnSignInBTN());
 		CommonUtil.actionClick(getClickOnSignInBTN());
 		
+		CommonUtil.highLighterMethod(getEnterEmail());
 		WaitHelper.waitForElement(getEnterEmail());
 		log.info(">>>>>>>>> User can enter the userName >>>>>>>>>>");
 		getEnterEmail().sendKeys(prop.getProperty("UserName"));
 		
+		CommonUtil.highLighterMethod(getEnterPassword());
 		WaitHelper.waitForElement(getEnterPassword());
 		log.info(">>>>>>>>> User can enter the password >>>>>>>>>>");
 		getEnterPassword().sendKeys(prop.getProperty("Password"));
 		
 		log.info(">>>>>>>>> User can click on log In BTN >>>>>>>>>>");
+		CommonUtil.highLighterMethod(getClickOnLoginBTN());
 		WaitHelper.waitForElement(getClickOnLoginBTN());
 		CommonUtil.actionClick(getClickOnLoginBTN());
 		
