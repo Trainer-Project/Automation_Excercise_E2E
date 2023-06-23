@@ -1,9 +1,6 @@
 package smarttech.ny.stepdefinations;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,7 +12,6 @@ import smarttech.ny.generic.WaitHelper;
 
 public class FuntionalStepDef extends ParentClass {
 	MasterPageFactory pf;
-// Highlight not mandatory
 	@Given("User already logged in the application and verify the user information on the landing page")
 	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() {
 		pf = new MasterPageFactory();

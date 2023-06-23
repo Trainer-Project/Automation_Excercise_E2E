@@ -47,10 +47,7 @@ public class MasterPageFactory extends ParentClass {
 		return clickOnSignInBTN;
 	}
 	
-
- 
-	
-	@FindBy(xpath = "(//*[text()='Welcome, Tanvir Patwary!'])[1]")
+	@FindBy(xpath = "(//*[text()='Welcome, Byron David!'])[1]")
 	@CacheLookup
 	private WebElement verifyUserInfo;
 

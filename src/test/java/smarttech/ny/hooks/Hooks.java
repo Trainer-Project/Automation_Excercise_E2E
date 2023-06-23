@@ -19,7 +19,6 @@ public class Hooks extends ParentClass {
 		obj = PageFactory.initElements(driver, MasterPageFactory.class);
 		obj.getLogin();
 	}
-
 	@After
 	public void tearDown(Scenario scenario) {
 		if (scenario.isFailed()) {

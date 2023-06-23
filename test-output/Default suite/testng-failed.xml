@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="smarttech.ny.listernerpage.iugiuufkg">
+      <class name="automation.challenges.softAndHardAssert">
         <methods>
-          <include name="OpenBrowser"/>
-          <include name="CloseBrowser"/>
+          <include name="softAssertionMethod"/>
+          <include name="hardAssertMethods"/>
         </methods>
-      </class> <!-- smarttech.ny.listernerpage.iugiuufkg -->
+      </class> <!-- automation.challenges.softAndHardAssert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
