@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-06-23T00:56:07.406Z",
+        "start_timestamp": "2023-06-23T02:27:54.943Z",
         "before": [
           {
             "result": {
-              "duration": 5676212800,
+              "duration": 5179727100,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 23,
+        "line": 21,
         "name": "User can login to the application with valid credentials and purchase the specific men\u0027s jacket.",
         "description": "",
         "id": "valid-user-can-purchase-the-men-jacket.;user-can-login-to-the-application-with-valid-credentials-and-purchase-the-specific-men-s-jacket.;;2",
         "after": [
           {
             "result": {
-              "duration": 117101300,
+              "duration": 124023100,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 964137600,
+              "duration": 919407600,
               "status": "passed"
             },
             "line": 8,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 1253078800,
+              "duration": 1093276700,
               "status": "passed"
             },
             "line": 9,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 1149300,
+              "duration": 1005900,
               "status": "passed"
             },
             "line": 10,
@@ -164,7 +164,13 @@
         ],
         "tags": [
           {
-            "name": "@smoke"
+            "name": "@sanity"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@Functional"
           }
         ]
       }

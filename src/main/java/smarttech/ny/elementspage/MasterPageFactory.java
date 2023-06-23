@@ -1,5 +1,6 @@
 package smarttech.ny.elementspage;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -14,7 +15,7 @@ public class MasterPageFactory extends ParentClass {
 	public MasterPageFactory() {
 		PageFactory.initElements(driver, this);
 	}
-
+    
 	@FindBy(id = "email")
 	@CacheLookup
 	private WebElement enterEmail;

@@ -17,7 +17,7 @@ public class CommonUtil extends ParentClass {
 
 	public static void getAssertions(String expected, String actual) {
 		Assert.assertEquals(expected, actual);
-		System.out.println("My desired value is : " + actual);
+		log.info("My desired value is : " + actual);
 	}
 
 	public static void hoverOver(WebElement ele) {

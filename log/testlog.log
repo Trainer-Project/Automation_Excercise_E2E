@@ -183,3 +183,26 @@
 2023-06-22 20:56:14,057 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over top men module >>>>>>>>>>
 2023-06-22 20:56:14,234 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over tops inside the man module >>>>>>>>>>
 2023-06-22 20:56:14,440 - Luma E-Commerce -INFO - >>>>>>>>> User able to click on jacket >>>>>>>>>>
+2023-06-22 22:20:57,832 - Luma E-Commerce -INFO - >>>>>>>>> Test Execute On Chrome Browser >>>>>>>>>>
+2023-06-22 22:20:58,517 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-06-22 22:20:58,535 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-06-22 22:21:01,144 - Luma E-Commerce -INFO - >>>>>>>>> User can click on sign In BTN >>>>>>>>>>
+2023-06-22 22:21:02,327 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the userName >>>>>>>>>>
+2023-06-22 22:21:02,475 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the password >>>>>>>>>>
+2023-06-22 22:21:02,527 - Luma E-Commerce -INFO - >>>>>>>>> User can click on log In BTN >>>>>>>>>>
+2023-06-22 22:21:03,964 - Luma E-Commerce -INFO - >>>>>>>>> User able to verify user info on the screen >>>>>>>>>>
+2023-06-22 22:21:04,919 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over top men module >>>>>>>>>>
+2023-06-22 22:21:05,114 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over tops inside the man module >>>>>>>>>>
+2023-06-22 22:21:05,285 - Luma E-Commerce -INFO - >>>>>>>>> User able to click on jacket >>>>>>>>>>
+2023-06-22 22:27:54,955 - Luma E-Commerce -INFO - >>>>>>>>> Test Execute On Chrome Browser >>>>>>>>>>
+2023-06-22 22:27:55,229 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 114.0.5735.90 (resolved driver for Chrome 114)
+2023-06-22 22:27:55,249 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+2023-06-22 22:27:57,521 - Luma E-Commerce -INFO - >>>>>>>>> User can click on sign In BTN >>>>>>>>>>
+2023-06-22 22:27:58,571 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the userName >>>>>>>>>>
+2023-06-22 22:27:58,712 - Luma E-Commerce -INFO - >>>>>>>>> User can enter the password >>>>>>>>>>
+2023-06-22 22:27:58,761 - Luma E-Commerce -INFO - >>>>>>>>> User can click on log In BTN >>>>>>>>>>
+2023-06-22 22:28:00,143 - Luma E-Commerce -INFO - >>>>>>>>> User able to verify user info on the screen >>>>>>>>>>
+2023-06-22 22:28:01,057 - Luma E-Commerce -INFO - My desired value is : Welcome, Byron David!
+2023-06-22 22:28:01,058 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over top men module >>>>>>>>>>
+2023-06-22 22:28:01,249 - Luma E-Commerce -INFO - >>>>>>>>> User able to hover over tops inside the man module >>>>>>>>>>
+2023-06-22 22:28:01,418 - Luma E-Commerce -INFO - >>>>>>>>> User able to click on jacket >>>>>>>>>>
