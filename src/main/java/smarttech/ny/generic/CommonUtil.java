@@ -6,8 +6,11 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.remote.Augmenter;
 import org.testng.Assert;
 
@@ -54,5 +57,21 @@ public class CommonUtil extends ParentClass {
 		}
 		return path;
 	}
+	
+	public static void captureScreenshot(WebDriver driver, String screenshotName) {
+
+		try {
+			TakesScreenshot ts = (TakesScreenshot) driver;
+			File source = ts.getScreenshotAs(OutputType.FILE);
+			FileHandler.copy(source, new File("./Screenshots/" + screenshotName + ".png"));
+		} catch (WebDriverException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+}
 
 }
